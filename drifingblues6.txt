@@ -1,0 +1,18 @@
+Driftingblues is the Name of the CTF.
+1: nmap die target - only port 80 is open. 
+2: using nikto to fetch some information on the webpage. Looked not so promising but there seems to be a readable "robots.txt"
+3: Check the content of robots.txt
+4: Robots contains a hint, I should include .zip extension in my dir-enumeration. 
+5: Dir-enumeration with gobuster including .zip
+6: Found spammer.zip on server plus a textpattern instance on /textpattern/
+7: Downloaded spammer.zip and found it was pw-protected. -> zip2john -> john to crack the pw. Unzip with the found pw. 
+8: creds.txt was found in the .zip file with a user:pass combination (assuming for textpattern login). 
+9: checked the textpattern version v4.8 -> searched for exploit on exploit-db.com and found a RCE with a webshell. 
+10: executed the exploit by using the found credentials and got access via webshell -> webshell to reverse shell via nc. 
+11: download of lineas.sh to the target and ./linpeas.sh -> showed highly probable vektor via cirtycow exploit (kernel v2.6 - v3.3 or so). 
+12: download and compiling of the mentioned exploit -> got root. 
+
+Very nice CTF with real-life vulnerable stuff.. very straight forward, LEVEL: easy. 
+
+  Greetings, m0erk. 
+  
