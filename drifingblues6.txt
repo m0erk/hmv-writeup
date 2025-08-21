@@ -1,4 +1,5 @@
 Driftingblues is the Name of the CTF.
+
 1: nmap die target - only port 80 is open. 
 2: using nikto to fetch some information on the webpage. Looked not so promising but there seems to be a readable "robots.txt"
 3: Check the content of robots.txt
