@@ -1,0 +1,17 @@
+Next driftingblues VM Machine from HackMyVM.eu
+
+1: nmap target -sV -p
+2: Fount open ports 66,80,443,... some more. 
+3: gobuster enumeration port 80 -> no real success.
+4: gobuster enumeration port 66 -> found user.txt / root.txt readable via CURL. -> CTF done.
+
+5: found folger "eon" with a base64 encoded .zip file.
+6: used john to bruteforce the zip
+7: found admin credentials for EON
+8: logged into EON with found creds
+9: searched for used version and according exploits
+10: msfconsole found exploit for this EOS with active admin session
+11: startet this exploit and ended with a root reverse shell
+
+
+Nice VM but strange to have direct access to user.txt and root.txt flag
