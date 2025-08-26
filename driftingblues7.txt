@@ -5,7 +5,7 @@ Next driftingblues VM Machine from HackMyVM.eu
 3: gobuster enumeration port 80 -> no real success.
 4: gobuster enumeration port 66 -> found user.txt / root.txt readable via CURL. -> CTF done.
 
-5: found folger "eon" with a base64 encoded .zip file.
+5: found folder "eon" with a base64 encoded .zip file on port 66
 6: used john to bruteforce the zip
 7: found admin credentials for EON
 8: logged into EON with found creds
